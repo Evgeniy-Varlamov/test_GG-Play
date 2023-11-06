@@ -8,9 +8,9 @@
 
 ## Структура проект
 
-css - стили
-fonts - шрифты
-js - javascript файлы
+css - стили  
+fonts - шрифты  
+js - javascript файлы  
 
 
 
