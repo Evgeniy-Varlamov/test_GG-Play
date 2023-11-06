@@ -1,0 +1,279 @@
+@import url('../fonts/fonts.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration:  none;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    list-style-type: none;
+}
+
+.hide {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1640px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.header {
+    padding: 62px 0 12px;
+    margin-bottom: 112px;
+}
+
+.logo-link {
+    font-family: "Roboto Slab";
+    font-weight: 800;
+    font-size: 28px;
+    display: inline-flex;
+    gap: 10px;
+}
+.logo-img {
+    width: 20%;
+}
+
+.main {
+    align-items: center;
+    justify-content: space-between;
+    gap: 152px;
+}
+
+.img-block {
+    flex-grow: 1;
+    max-width: 658px;
+}
+
+.content-img {
+    width: 100%
+}
+
+
+.content-block {
+    flex-grow: 1;
+    font-family: "Inter";
+    color: #343434
+}
+.title  {
+    font-family: "Roboto Slab";
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.form-block.flex {
+    gap: 16px;
+}
+
+.label-block {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.theme {
+    flex-grow: 1;
+}
+
+.class {
+    width: 120px;
+}
+
+.text-label {
+    position: absolute;
+    left: 16px;
+    top: -10px;
+    padding: 1px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.field {
+    width: 100%;
+    height: 56px;
+    padding-left: 15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    border: 1.5px solid #EAEAEA;
+    font-size: 18px;
+    background-color: inherit;
+}
+
+#class-select {
+    background-image: url("/img/arrow-up.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    text-align: left;
+}
+#class-select.close {
+    background-image: url("/img/arrow-down.svg");
+}
+
+.option-list {
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    margin-top: -22px;
+    background-color: #ffffff;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+}
+#class-select + .option-list.close {
+    height: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.option {
+    padding: 9px 16px;
+}
+.option.selected {
+    font-weight: 600;
+    background-image: url("/img/tick-circle.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+.option:hover {
+    background-color: #eeeeee;
+}
+
+.tags-block {
+    margin-top: 20px;
+    font-weight: 500;
+}
+.tags-list {
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tag-item {
+    padding: 10px 16px;
+    border-radius: 100px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #EEEFF0;
+    cursor: pointer;
+}
+#show-more {
+    color: #3CA9F0;
+    margin-top: 21px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+#show-more::before {
+    content: "";
+    background-image: url("/img/add.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+}
+
+
+#target-block {
+    margin-top: 48px;
+
+}
+.target-text {
+    resize: none;
+    display: block;
+    padding: 16px;
+    height: 100px;
+    width: 100%;
+}
+
+.target-bottom {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.buttons-block {
+    margin-top: 32px;
+    gap: 16px;
+}
+.btn {
+    display: flex;
+    padding: 18px 52px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+#btn-back {
+    color: #3CA9F0;
+    border: solid #3CA9F0 1px
+}
+#btn-next {
+    color: #ffffff;
+    background-color:  #3CA9F0;
+    border: none;
+}
+#btn-next:disabled {
+    color: #9A9A9A;
+    background-color: #EEEFF0;
+}
+
+.error span {
+    color: #ff0000
+}
+.error .error-message {
+    display: block;
+}
+
+.error .field {
+    border-color: #ff0000;
+}
+.error .target-text:focus {
+    outline-color: #ff0000;
+}
+
+@media (max-width: 960px) {
+    .main {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+}
+@media (max-width: 499px) {
+    .title {
+        font-size: 36px;
+    }
+    .buttons-block {
+        flex-direction: column-reverse;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

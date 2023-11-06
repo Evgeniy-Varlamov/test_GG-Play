@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="/" class="logo-link">
+                <img src="img/logo.svg" alt="Логотип" class="logo-img">
+                Сократика
+            </a>
+        </header>
+        <main class="main flex">
+            <div class="img-block">
+                <img src="img/illustration.png" alt="Illustration" class="content-img">
+            </div>
+            <div class="content-block">
+                <h1 class="title">01 Заполни форму</h1>
+                <form xclass="form" action="">
+                    <div class="flex form-block">
+                        <label class="theme label-block">
+                            <span class="text-label">Тема урока</span>
+                            <input type="text"
+                                   class="field"
+                                   id="theme-field"
+                                   name="theme"
+                                   placeholder="Напишите что-то конкретное">
+                        </label>
+                        <label class="class label-block">
+                            <span class="text-label">Класс</span>
+<!-- Кастомный селект -->
+                            <button type="button"
+                                    id="class-select"
+                                    class="field close">1</button>
+                            <ul class="option-list field close"
+                                id="class-list">
+                                <li class="option selected">1</li>
+                                <li class="option">2</li>
+                                <li class="option">3</li>
+                                <li class="option">4</li>
+                                <li class="option">5</li>
+                                <li class="option">6</li>
+                                <li class="option">7</li>
+                                <li class="option">8</li>
+                                <li class="option">9</li>
+                                <li class="option">10</li>
+                                <li class="option">11</li>
+                            </ul>
+<!-- Это обычный стандартный селект
+                            <select class="field"
+                                    name="class">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option selected value="4">4</option>
+                                <option value="5">5</option>
+                            </select> -->
+                        </label>
+                    </div>
+                    <div class="form-block tags-block">
+                        <ul class="tags-list flex">
+                            <li class="tag-item">Генетика</li>
+                            <li class="tag-item">Анатомия человека</li>
+                            <li class="tag-item">Вулканы</li>
+                            <li class="tag-item">Зимние виды спорта</li>
+                            <li class="tag-item">Радуга</li>
+                            <li class="tag-item">Индийская культура</li>
+                            <li class="tag-item">Пеший туризм</li>
+                            <li class="tag-item">Философия</li>
+                            <li class="tag-item">Вселенная</li>
+                            <li class="tag-item">Здоровые привычки</li>
+                            <li class="tag-item">Бабочки</li>
+                            <li class="tag-item">Белые медведи</li>
+                            <li class="tag-item">Экономика</li>
+                            <li class="tag-item">Финансовая грамотность</li>
+                            <li class="tag-item">Фотосинтез</li>
+                        </ul>
+                        <span id="show-more">Показать больше варианто</span>
+                    </div>
+                    <div class="form-block"
+                         id="target-block">
+                        <label class="target label-block">
+                            <span class="text-label">Цель урока</span>
+                            <textarea name="target"
+                                      class="target-text field"
+                                      id="target-field"
+
+                                      placeholder="Напиши свою учебную цель"></textarea>
+                        </label>
+                        <div class="flex target-bottom">
+                            <span id="target-length">0 / 200</span>
+                            <span class="error-message hide">Enter your name</span>
+                        </div>
+                    </div>
+                    <div class="flex form-block buttons-block">
+                        <button type="button"
+                                class="btn"
+                                id="btn-back">
+                            Назад
+                        </button>
+                        <button type="submit"
+                                class="btn"
+                                id="btn-next">
+                            Следующий шаг
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
