@@ -1,4 +1,19 @@
-# test_GG-Play
+# Тестовое задание (GG-Play)
 
-[GithubPage](https://evgeniy-varlamov.github.io/test_GG-Play/)
+[Ссылка на GithubPage](https://evgeniy-varlamov.github.io/test_GG-Play/)
+
+## Стэк технологий 
+
+Использовался нативный HTML CSS и JavaScript без использования дополнительных библиотек и фреймворков
+
+## Структура проект
+
+css - стили
+fonts - шрифты
+js - javascript файлы
+
+
+
+
+
 
